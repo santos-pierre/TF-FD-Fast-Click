@@ -34,7 +34,7 @@ function handleClick(event) {
 	if (previousPosition) {
 		const {x, y} = previousPosition;
 		const {x2, y2} = { x2: event.target.offsetLeft, y2: event.target.offsetTop }
-		score += Math.floor(Math.sqrt(Math.pow((x2 - x), 2)+(y2 - y)));
+		score += Math.floor(Math.sqrt(Math.pow((x2 - x), 2) + Math.pow((y2 - y), 2)));
 	}
 	previousPosition = { x: event.target.offsetLeft, y: event.target.offsetTop };
 	scoreElement.innerHTML = score;
