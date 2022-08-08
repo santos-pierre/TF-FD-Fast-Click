@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+:root{
+	--bg-main-dark: #0F172A;
+	--primary: #60A5FA;
+	--primary-dark: #1D4ED8;
+	--warning: #FACC15;
+	--danger: #F87171;
+}
+
+html, body {
+	margin: 0;
+	height: 100%;
+	font-family: 'Electrolize', Courier, monospace;
+	background-color: var(--bg-main-dark);
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+#app {
+	flex-grow: 2;
+	position: relative;
+}
+
+#square {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: var(--primary);
+	border: 2px solid var(--primary-dark);
+}
+
+.info {
+	font-size: 2.6rem;
+ 	text-transform: uppercase;
+	padding: 0.5em;
+
+}
+
+.text-warning {
+	color: var(--warning);
+}
+
+.text-danger {
+	color: var(--danger);
+}
+
+#ath span:last-child span {
+	text-transform: none;
+}
+
+#ath {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 25px;
+}
+
+#countdown {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#countdown span {
+	font-size: 7.2rem;
+	color: #fff;
+}
